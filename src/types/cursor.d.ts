@@ -1,0 +1,1 @@
+export type Cursor = "expand" | "blink" | "smooth" | "solid";
