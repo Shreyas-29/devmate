@@ -1,7 +1,6 @@
-import { getProblem, getAllProblems, getRandomProblems } from '@/actions';
-import { Container, Toolbar, Workspace } from '@/components';
+import { getAllProblems } from '@/actions';
+import { Container } from '@/components';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
-import React from 'react';
 
 
 interface ProblemProps {
@@ -26,7 +25,7 @@ export default async function ProblemPage({ params }: ProblemProps) {
 
     const user = getUser();
 
-    const problems = await getRandomProblems();
+    const problems = await getAllProblems();
 
     return (
         <section className="flex flex-col items-center w-full h-screen">

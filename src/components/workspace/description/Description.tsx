@@ -1,13 +1,10 @@
 "use client";
 
-import { Archive, BookOpen, Code, Database, FileText, FlaskConical, History, Keyboard, Layout, LockKeyhole, Sparkles, Tag } from "lucide-react";
 import { cn } from '@/lib/utils';
-import { AnimatePresence, motion } from 'framer-motion';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import React, { useRef } from 'react'
 import { Problem } from "@/types/problems";
-import { Button } from "@/components/ui/Button";
+import { BookOpen, FileText, FlaskConical, History, LockKeyhole, Sparkles, Tag } from "lucide-react";
+import { usePathname } from 'next/navigation';
+import React from 'react';
 
 interface Props {
     problem: Problem;
@@ -97,7 +94,7 @@ const Description: React.FC<Props> = ({ problem }) => {
                 {/* Problem Statement */}
                 <div className="flex w-full mt-4">
                     <p
-                        dangerouslySetInnerHTML={{ __html: problem?.problemStatement }}
+                        dangerouslySetInnerHTML={{ __html: problem?.problemStatement! }}
                         className="w-full text-justify font-medim tex-sm text-primary"
                     />
                 </div>
@@ -127,7 +124,7 @@ const Description: React.FC<Props> = ({ problem }) => {
                 <div className='pb-4 my-8'>
                     <div className='text-sm font-medium text-primary'>Constraints:</div>
                     <ul className='ml-5 list-disc text-primary'>
-                        <div dangerouslySetInnerHTML={{ __html: problem?.constraints }} />
+                        <div dangerouslySetInnerHTML={{ __html: problem?.constraints! }} />
                     </ul>
                 </div>
             </div>

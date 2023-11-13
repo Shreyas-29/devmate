@@ -7,9 +7,9 @@ export interface Problem {
     acceptance: string;
     status: "Todo" | "Solved" | "Attempted" | null;
     order?: number | null;
-    problemStatement: string;
+    problemStatement?: string;
     examples?: Examples[];
-    constraints: string;
+    constraints?: string;
     starterCode?: string;
     handlerFunction?: ((fn: any) => boolean) | string;
     starterFunctionName?: string;

@@ -88,7 +88,7 @@ const ProblemContainer: React.FC<Props> = () => {
                 ))}
             </nav>
 
-            <div className="flex flex-col items-center flex-1 w-full h-full p-4 overflow-y-scroll">
+            <div className="flex flex-col items-center flex-1 w-full h-full p-4 overflow-y-scroll text-primary">
                 {activeComponent}
             </div>
         </div>

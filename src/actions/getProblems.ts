@@ -21,7 +21,7 @@ const getRandomStatus = () => {
     // @ts-ignore
 };
 
-export const getAllProblems: () => Promise<Problems[]> = async () => {
+export const getAllProblems: () => Promise<Problem[]> = async () => {
     return [
         {
             id: "1",
@@ -33,6 +33,7 @@ export const getAllProblems: () => Promise<Problems[]> = async () => {
             slug: "two-sum",
             problemStatement: twoSum.problemStatement,
             examples: twoSum.examples,
+
         },
         {
             id: "2",

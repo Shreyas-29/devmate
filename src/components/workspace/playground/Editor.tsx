@@ -1,37 +1,30 @@
 "use client";
 
-import { cn } from '@/lib/utils';
-import { Problem } from '@/types/problems';
-import { KindeUser, getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
-import { usePathname, useRouter } from 'next/navigation';
-import React, { useEffect, useRef, useState } from 'react'
-import CodeMirror from "@uiw/react-codemirror";
-import { vscodeDark } from "@uiw/codemirror-theme-vscode";
-import { darcula } from "@uiw/codemirror-theme-darcula";
-import { javascript } from "@codemirror/lang-javascript";
-import { cursorBlinkingStore, useFontSizeStore, useLanguageStore, useResultStore } from '@/store';
-import { Bug, ChevronDown, Code, Loader2, Lock, ShieldCheck, Trash2 } from 'lucide-react';
+import { updateUser } from '@/actions';
 import { Button } from '@/components/ui/Button';
-import { Editor as CodeEditor } from '@monaco-editor/react';
-import { editor } from 'monaco-editor';
-import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
+    DropdownMenuTrigger
 } from "@/components/ui/DropdownMenu";
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from "@/components/ui/Tooltip"
+} from "@/components/ui/Tooltip";
 import { toast } from '@/hooks/use-toast';
 import { problems } from '@/lib/problems';
-import { updateUser } from '@/actions';
+import { cn } from '@/lib/utils';
+import { cursorBlinkingStore, useFontSizeStore, useLanguageStore, useResultStore } from '@/store';
+import { Problem } from '@/types/problems';
+import { KindeUser } from '@kinde-oss/kinde-auth-nextjs/server';
+import { Editor as CodeEditor } from '@monaco-editor/react';
+import { Bug, ChevronDown, Code, Loader2, ShieldCheck, Trash2 } from 'lucide-react';
+import { editor } from 'monaco-editor';
+import { usePathname, useRouter } from 'next/navigation';
+import React, { useEffect, useRef, useState } from 'react';
 
 
 interface Props {
