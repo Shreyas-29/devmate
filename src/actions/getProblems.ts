@@ -527,34 +527,34 @@ export const getDatabaseProblems: () => Promise<any[]> = async () => [
 ];
 
 export const getAllProblems2 = async () => {
-    try {
-        const problems = await db.problem.findMany({
-            where: {
-                category: "All"
-            },
-            orderBy: {
-                order: "desc"
-            }
-        });
+    // try {
+    //     const problems = await db.problem.findMany({
+    //         where: {
+    //             category: "All"
+    //         },
+    //         orderBy: {
+    //             order: "desc"
+    //         }
+    //     });
 
-        return problems;
-    } catch (error) {
-        console.log("Error getting problems: ", error);
-        return [];
-    }
+    //     return problems;
+    // } catch (error) {
+    //     console.log("Error getting problems: ", error);
+    //     return [];
+    // }
 };
 
 export const getRandomProblems = async () => {
-    try {
-        const problems = await db.problem.findMany({
-            orderBy: {
-                order: "desc"
-            }
-        });
+    // try {
+    //     const problems = await db.problem.findMany({
+    //         orderBy: {
+    //             order: "desc"
+    //         }
+    //     });
 
-        return problems;
-    } catch (error) {
-        console.log("Error getting problems: ", error);
-        return [];
-    }
+    //     return problems;
+    // } catch (error) {
+    //     console.log("Error getting problems: ", error);
+    //     return [];
+    // }
 };

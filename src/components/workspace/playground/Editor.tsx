@@ -1,6 +1,5 @@
 "use client";
 
-import { updateUser } from '@/actions';
 import { Button } from '@/components/ui/Button';
 import {
     DropdownMenu,
@@ -171,9 +170,6 @@ const Editor: React.FC<Props> = ({ user, problem, success, solved, setSuccess, s
                     setTimeout(() => {
                         setSuccess(false);
                     }, 4000);
-
-                    // Update the user problem solved status
-                    updateUser(user?.id!, slug);
 
                     setSolved(true);
                 }
