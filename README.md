@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Devmate - Coding Platform For Developers
+
+Welcome to Devmate, a fullstack web app built with Next.js, Tailwind CSS, Monaco Code Editor. Devmate provides a platform to solve programming problems, track progress, and engage with a community of developers.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Shreyas-29/devmate.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project directory:
+```
+cd devmate
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install dependencies:
+```
+npm install
+# or
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+- Next.js 13: React framework for building server-rendered applications.
+- Tailwind CSS: Utility-first CSS framework for styling.
+- Monaco Editor: Code editor for writing and styling your code.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Features
+- User Authentication: Allow users to sign up, log in, and manage their profiles.
+- Problem Solving: Create, solve, and track programming problems with different difficulty levels.
+- Code Editor: Provide an integrated code editor for users to write and submit their solutions.
+- Community Interaction: Engage with other developers through comments, solutions, and discussions.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Setup and Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Clone the repository.
+- Install dependencies using npm install or yarn install.
+- Set up MongoDB and update the connection string in .env.
+- Run the development server: npm run dev or yarn dev.
+
+## Contributing
+Contributions are welcome! If you have suggestions, bug reports, or want to add new features, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+
