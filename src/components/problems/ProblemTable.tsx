@@ -15,11 +15,8 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/Table"
-import { cn } from "@/lib/utils"
-import { CheckCircle, Circle } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 import Link from "next/link"
-import { useProblemStore } from '@/store';
-import { useState } from "react"
 
 interface ProblemTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[]
