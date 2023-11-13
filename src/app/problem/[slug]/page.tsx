@@ -30,7 +30,14 @@ export default async function ProblemPage({ params }: ProblemProps) {
 
     return (
         <section className="flex flex-col items-center w-full h-screen">
-            <Container user={user} problems={problems} />
+            <div className="flex-col hidden w-full h-full lg:flex">
+                <Container user={user} problems={problems} />
+            </div>
+            <div className="flex flex-col w-full h-full lg:hidden">
+                <p className="flex items-center justify-center w-full mx-auto text-center text-primary">
+                    DevMate is not available on mobile devices yet.
+                </p>
+            </div>
         </section>
     )
 }

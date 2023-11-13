@@ -1,5 +1,3 @@
-import { db } from "@/lib/db";
-import { problems } from "@/lib/problems";
 import { addTwoNumbers } from "@/lib/problems/add-two-numbers";
 import { containerWithMostWater } from "@/lib/problems/container-with-most-water";
 import { integerToRoman } from "@/lib/problems/integer-to-roman";

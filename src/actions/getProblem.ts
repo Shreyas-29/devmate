@@ -1,4 +1,3 @@
-import { db } from "@/lib/db"
 import { problems } from "@/lib/problems";
 
 const getProblem = (slug: string) => {
