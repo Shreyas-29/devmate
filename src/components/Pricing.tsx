@@ -46,7 +46,7 @@ const Pricing = () => {
                         </div>
                         <div className="flex flex-col items-start px-5 pt-5 pb-8">
                             <span className="w-full text-sm font-medium uppercase text-slate-200 text-start">
-                                What's included
+                                What&apos;s included
                             </span>
                             <ul className="mt-3">
                                 {plan.features?.map((feature, index) => (

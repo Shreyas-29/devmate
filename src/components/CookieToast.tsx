@@ -12,7 +12,7 @@ const CookieToast = () => {
         if (!hasAcceptedCookies) {
             return cookieToast();
         }
-    }, []);
+    }, [cookieToast]);
 
     return null;
 }

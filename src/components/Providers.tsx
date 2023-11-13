@@ -11,7 +11,7 @@ const Providers = ({ children, ...props }: ThemeProviderProps) => {
 
     useEffect(() => {
         setTheme("dark");
-    }, []);
+    }, [setTheme]);
 
     return (
         <NextThemesProvider {...props}>

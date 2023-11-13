@@ -197,7 +197,7 @@ export const topics = [
     }
 ];
 
-export const columns: ColumnDef<Problems>[] = [
+export const columns: ColumnDef<Problem>[] = [
     {
         accessorKey: "status",
         header: "Status",

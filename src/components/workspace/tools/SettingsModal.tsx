@@ -194,7 +194,7 @@ const SettingsModal: React.FC<Props> = () => {
                                         Ctrl
                                     </span>
                                     <span className="key">
-                                        '
+                                        &apos;
                                     </span>
                                 </div>
                             </li>
@@ -249,7 +249,7 @@ const SettingsModal: React.FC<Props> = () => {
                                         Alt
                                     </span>
                                     <span className="key">
-                                        '
+                                        &apos;
                                     </span>
                                 </div>
                             </li>
