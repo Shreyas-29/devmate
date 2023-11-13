@@ -1,27 +1,11 @@
 "use client";
 
-import { cn } from '@/lib/utils';
-import React, { useState } from 'react'
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/DropdownMenu";
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/Tooltip"
-import { CheckSquare, ChevronDown, Code, CheckSquare2 } from 'lucide-react';
-import Image from 'next/image';
-import { Problem } from '@/types/problems';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
+import { cn } from '@/lib/utils';
 import { useActiveTestCaseIdStore, useResultStore } from '@/store';
+import { Problem } from '@/types/problems';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 interface Props {
     problem: Problem;
