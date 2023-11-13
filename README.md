@@ -30,7 +30,7 @@ Install dependencies:
 ```
 npm install
 # or
-yarn install
+yarn
 ```
 
 ## Tech Stack
